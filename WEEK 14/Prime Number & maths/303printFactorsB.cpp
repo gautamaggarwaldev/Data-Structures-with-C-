@@ -1,0 +1,14 @@
+# include <iostream>
+# include <cmath>
+using namespace std;
+void printFactor(int n) {
+    for(int i=1; i<=sqrt(n); i++) {
+        if(n%i==0) {
+            cout << i << " ";
+            if(i!=sqrt(n)) cout << n/i << " ";
+        }
+    }
+}
+int main() {
+    printFactor(49);
+}
